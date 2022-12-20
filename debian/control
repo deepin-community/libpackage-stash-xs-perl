@@ -1,0 +1,28 @@
+Source: libpackage-stash-xs-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 11),
+               perl,
+               libtest-fatal-perl,
+               libtest-requires-perl,
+               libvariable-magic-perl
+Standards-Version: 4.3.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libpackage-stash-xs-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libpackage-stash-xs-perl.git
+Homepage: https://metacpan.org/release/Package-Stash-XS
+
+Package: libpackage-stash-xs-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Enhances: libpackage-stash-perl
+Description: Perl module providing routines for manipulating stashes (XS version)
+ Manipulating stashes (Perl's symbol tables) is occasionally necessary, but
+ incredibly messy, and easy to get wrong. Package::Stash hides all of that
+ behind a simple API.
+ .
+ Package::Stash::XS provides the faster and more correct XS implementation.
